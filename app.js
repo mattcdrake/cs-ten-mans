@@ -9,8 +9,13 @@ app.set("view engine", "ejs");
 gameManager = new GameManager();
 
 app.get('/', function (req, res) {
-  console.log("request on path " + req.path);
+  console.log("GET request on path " + req.path);
   res.render("home", {});
+});
+
+app.get('/new', function (req, res) {
+  console.log("GET request on path " + req.path);
+  res.render("new");
 });
 
 app.listen(PORT, function () {
