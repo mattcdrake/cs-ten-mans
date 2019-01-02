@@ -1,15 +1,25 @@
-<h2>Create a New 10-Man</h2>
+<% include partials/header %>
 
-<form id="new-game">
-  <div id="new-game-name">
-    <label>Game name: </label> <input type="text">
-  </div>
-  <div id="new-game-host-name">
-    <label>Host name: </label> <input type="text">
-  </div>
-  <div id="password">
-    <label>Game password (optional):</label> <input type="text">
-  </div>
-</form>
+<div id="new-game-form" class="ui raised very padded text container segment">
+  <h2 class="ui header">Create a New 10-Man</h2>
+
+  <form method="POST" action="/new">
+    <div>
+      <label for="game_name">Game name (4-80 characters)</label><br>
+      <input id="game_name" type="text" name="game_name" required>
+    </div>
+    <div>
+      <label for="host_name">Host name (4-80 characters)</label><br>
+      <input id="host_name" type="text" name="host_name" required>
+    </div>
+    <div>
+      <label for="password">Password (optional, 8-20 characters)</label><br>
+      <input id="password" type="text" name="password">
+    </div><br>
+    <input type="submit" class="ui button" value="Submit">
+  </form>
+</div>
 
 <a href="/">Go back to the homepage</a>
+
+<% include partials/footer %>

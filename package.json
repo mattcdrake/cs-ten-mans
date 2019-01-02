@@ -1,5 +1,40 @@
 {
   "name": "cs-ten-mans",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "description": "A web app for finding and organizing CS:GO 10-mans",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattcdrake/cs-ten-mans.git"
+  },
+  "author": "Matt Drake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattcdrake/cs-ten-mans/issues"
+  },
+  "homepage": "https://github.com/mattcdrake/cs-ten-mans#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
 }
