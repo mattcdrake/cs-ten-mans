@@ -3,7 +3,7 @@
 A website that lets players find and oragnize "10-man" Counter-Strike matches.
 Features a player selection process, and map banning.
 
-## TODO
+## TODO (features)
 
 - list all current games on home page
 - add sorting functionality to home page games

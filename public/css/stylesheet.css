@@ -2,6 +2,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-#new-game-form {
-  margin-top: 10%;
+#brand-header {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#main-page {
+  background-color: rgb(252, 237, 224);
 }

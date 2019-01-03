@@ -1,25 +1,32 @@
 <% include partials/header %>
 
+<div id="brand-header">
+  <a href="/">
+    <h1 class="ui center aligned icon header">
+      <i class="circular handshake outline icon"></i>
+      CS:GO 10-Man Finder
+    </h1>
+  </a>
+</div>
+
 <div id="new-game-form" class="ui raised very padded text container segment">
-  <h2 class="ui header">Create a New 10-Man</h2>
+  <h2 class="ui header">Create a New 10-Man Game</h2>
 
   <form method="POST" action="/new">
     <div>
-      <label for="game_name">Game name (4-80 characters)</label><br>
+      <label for="game_name">Game name</label><br>
       <input id="game_name" type="text" name="game_name" required>
     </div>
     <div>
-      <label for="host_name">Host name (4-80 characters)</label><br>
+      <label for="host_name">Host name</label><br>
       <input id="host_name" type="text" name="host_name" required>
     </div>
     <div>
-      <label for="password">Password (optional, 8-20 characters)</label><br>
+      <label for="password">Password (optional)</label><br>
       <input id="password" type="text" name="password">
     </div><br>
     <input type="submit" class="ui button" value="Submit">
   </form>
 </div>
-
-<a href="/">Go back to the homepage</a>
 
 <% include partials/footer %>
